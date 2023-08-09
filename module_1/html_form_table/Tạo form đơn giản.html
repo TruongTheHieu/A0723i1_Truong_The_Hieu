@@ -2,9 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>tạo form đơn giản 1</title>
 </head>
+<style>
+    td {
+        color: orange;
+    }
+    .item{
+        color: blue;
+    }
+    form{
+        background-color: aqua;
+    }
+</style>
 <body>
-$END$
+<form>
+        <table style="background-color: white">
+            <h3 style="color:white;background-color: red;text-align: center">Sở thích của bạn</h3>
+            <tr>
+                <td class="item">Họ và tên</td>
+                <td><input type="text" name=""></td>
+            </tr>
+            <tr>
+                <td class="item">Email</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="item">Sở Thích</td>
+                <td><input type="checkbox">Thể thao</td>
+                <td><input type="checkbox">âm nhạc</td>
+                <td><input type="checkbox">đọc sách</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">lướt web</td>
+                <td><input type="checkbox">chơi game</td>
+                <td><input type="checkbox">điện ảnh</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">du lịch</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">gửi thông tin</button>
+                </td>
+                <td>
+                    <button type="reset">Nhập lại</button>
+                </td>
+            </tr>
+        </table>
+
+</form>
+
 </body>
 </html>

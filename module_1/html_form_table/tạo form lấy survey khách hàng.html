@@ -1,10 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
+<style>
+    select{
+        width:200px;
+    }
+</style>
 <body>
-$END$
+<h1>Marker Research Survvey</h1>
+<p> please take a few moments to complete this satisfaction survey</p>
+<hr>
+<b>What is your age range?</b>
+<br>
+<select>
+    <option>18-24</option>
+    <option>25-34</option>
+    <option>35-50</option>
+    <option>50+</option>
+</select>
+<h4>What is your yearly income rangr?</h4>
+<select>
+    <option>$0-$25,00</option>
+    <option>$25,001- $50,000</option>
+    <option>$50,001-$100,000</option>
+    <option>$100,000+</option>
+</select>
+<h4>Gender identity</h4>
+<input type="radio"> Male</input>
+<br><input type="radio"> Female</input>
+<br><input type="radio"> Nonbinary</input>
+<br><input type="radio"> Other</input>
+<br><input type="text" placeholder="tối đa 50 ký tự">
+<h4>which of the followwing products have your purchased in the last 2 months.Please check all that apply.</h4>
+   <input type="checkbox">Product 1
+<br> <input type="checkbox">Product 2
+<br> <input type="checkbox">Product 3
+<h4>How often would you use our new product?</h4>
+<input type="radio">Daily
+<br><input type="radio">Weekly
+<br><input type="radio">Monthly
+<h4>What would you pay for the new product?</h4>
+$ <input type="number"style="width: 50px">.<input type="number"style="width: 10px">
+<h4>What features would you like to see in the new product.</h4>
+<textarea></textarea>
+<p>Please rate your level of agreement with the followwing statements.</p>
+<table border="1">
+    <tr>
+        <td></td>
+        <td>strongly disafree</td>
+        <td>Disagree</td>
+        <td>agree</td>
+        <td>strongly Agree</td>
+    </tr>
+    <tr>
+        <th>Our products are priced fairly</th>
+        <td><input type="radio" >1</td>
+        <td><input type="radio">2</td>
+        <td><input type="radio">3</td>
+        <td><input type="radio">4</td>
+    </tr>
+    <tr>
+        <th>Our products are high quality</th>
+        <td><input type="radio">1</td>
+        <td><input type="radio">2</td>
+        <td><input type="radio">3</td>
+        <td><input type="radio">4</td>
+    </tr>
+    <tr>
+        <th>you would recommend our product to a friend of cowker.</th>
+        <td><input type="radio">1</td>
+        <td><input type="radio">2</td>
+        <td><input type="radio">3</td>
+        <td><input type="radio">4</td>
+    </tr>
+
+</table>
+<button type="submit">submit</button>
 </body>
 </html>
