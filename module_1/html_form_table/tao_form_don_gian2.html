@@ -1,60 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>tạo form đơn giản 1</title>
+    <title>Title</title>
 </head>
 <style>
-    td {
-        color: orange;
-    }
     .item{
         color: blue;
     }
     form{
-        background-color: aqua;
+        width: 400px;
+        background-color: khaki;
+
     }
 </style>
 <body>
 <form>
-        <table style="background-color: white">
-            <h3 style="color:white;background-color: red;text-align: center">Sở thích của bạn</h3>
-            <tr>
-                <td class="item">Họ và tên</td>
-                <td><input type="text" name=""></td>
-            </tr>
-            <tr>
-                <td class="item">Email</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td rowspan="3" class="item">Sở Thích</td>
-                <td><input type="checkbox">Thể thao</td>
-                <td><input type="checkbox">âm nhạc</td>
-                <td><input type="checkbox">đọc sách</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox">lướt web</td>
-                <td><input type="checkbox">chơi game</td>
-                <td><input type="checkbox">điện ảnh</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox">du lịch</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <button type="submit">gửi thông tin</button>
-                </td>
-                <td>
-                    <button type="reset">Nhập lại</button>
-                </td>
-            </tr>
-        </table>
+    <table>
+        <h1 style="background-color: aquamarine; color: blue">ĐĂNG KÝ HỌC VIÊN</h1>
+        <tr>
+            <td class="item">Họ và tên</td>
+            <td colspan="2"><input type="text" name="firs name"</td>
+        </tr>
+        <tr>
+            <td class="item">Ngày sinh</td>
+            <td colspan="2"><input type="date"></td>
+        </tr>
+        <tr>
+            <td class="item">Giới tính</td>
+            <td><input type ="radio">nam <input type="radio">Nữ</td>
 
+        </tr>
+        <tr>
+            <td class="item">Địa chỉ</td>
+            <td><textarea rows="2" cols="40">viết vào đây</textarea></td>
+        </tr>
+        <tr>
+            <td class="item" style="vertical-align: top">Lớp</td>
+            <td colspan="2"><select>
+                <option>chọn lớp</option>
+                <option>1</option>
+                <option>2</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="item">Email</td>
+            <td colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="item">Điện thoại</td>
+            <td colspan="2"><input type="number"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"><button type="button">Đăng ký</button> <button type="reset">Nhập lại</button></td>
+
+        </tr>
+    </table>
 </form>
-
 </body>
 </html>
