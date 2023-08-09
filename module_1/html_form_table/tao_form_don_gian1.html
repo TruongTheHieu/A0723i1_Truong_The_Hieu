@@ -8,96 +8,58 @@
     td {
         color: orange;
     }
-    .item{
+
+    .item {
         color: blue;
     }
-    form{
+    .aqua {
         background-color: aqua;
+        padding: 10px;
     }
+    form{
+        background-color: white
+    }
+
 </style>
 <body>
+<div class="aqua">
 <form>
-        <table style="background-color: white">
-            <h3 style="color:white;background-color: red;text-align: center">Sở thích của bạn</h3>
-            <tr>
-                <td class="item">Họ và tên</td>
-                <td><input type="text" name=""></td>
-            </tr>
-            <tr>
-                <td class="item">Email</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td rowspan="3" class="item">Sở Thích</td>
-                <td><input type="checkbox">Thể thao</td>
-                <td><input type="checkbox">âm nhạc</td>
-                <td><input type="checkbox">đọc sách</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox">lướt web</td>
-                <td><input type="checkbox">chơi game</td>
-                <td><input type="checkbox">điện ảnh</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox">du lịch</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <button type="submit">gửi thông tin</button>
-                </td>
-                <td>
-                    <button type="reset">Nhập lại</button>
-                </td>
-            </tr>
-        </table>
-    <hr>
-    <table>
-        <h1 style="background-color: aquamarine; color: blue">ĐĂNG KÝ HỌC VIÊN</h1>
+    <table >
+        <h3 style="color:white;background-color: red;text-align: center">Sở thích của bạn</h3>
         <tr>
             <td class="item">Họ và tên</td>
-            <td colspan="2"><input type="text" name="firs name"</td>
-        </tr>
-        <tr>
-            <td class="item">Ngày sinh</td>
-            <td colspan="2"><input type="date"></td>
-        </tr>
-        <tr>
-            <td class="item">Giới tính</td>
-            <td><input type ="radio">nam <input type="radio">Nữ</td>
-
-        </tr>
-        <tr>
-            <td class="item">Địa chỉ</td>
-            <td><textarea rows="2" cols="40">viết vào đây</textarea></td>
-        </tr>
-        <tr>
-            <td class="item" style="vertical-align: top">Lớp</td>
-            <td colspan="2"><select>
-                <option>chọn lớp</option>
-                <option>1</option>
-                <option>2</option>
-            </select></td>
+            <td><input type="text" name="email"></td>
         </tr>
         <tr>
             <td class="item">Email</td>
-            <td colspan="2"><input type="text"></td>
+            <td><input type="text"></td>
         </tr>
+    </table>
+    <table>
         <tr>
-            <td class="item">Điện thoại</td>
-            <td colspan="2"><input type="number"></td>
+            <td class="item">Sở Thích</td>
+            <td><input type="checkbox" name="hobby">Thể thao</td>
+            <td><input type="checkbox" name="hobby">âm nhạc</td>
+            <td><input type="checkbox" name="hobby">đọc sách</td>
         </tr>
         <tr>
             <td></td>
-            <td colspan="2"><button type="button">Đăng ký</button> <button type="reset">Nhập lại</button></td>
-
+            <td><input type="checkbox" name="hobby">lướt web</td>
+            <td><input type="checkbox" name="hobby">chơi game</td>
+            <td><input type="checkbox" name="hobby">điện ảnh</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="hobby">du lịch</td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
+    <button type="submit">gửi thông tin</button>
+    <button type="reset">Nhập lại</button>
 
 
 </form>
-
+</div>
 </body>
 </html>
