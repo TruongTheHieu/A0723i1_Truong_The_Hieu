@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <!--bài 2:  Viết chương trình nhập một giá trị là độ 0C (Celsius)
+     và chuyển nó sang độ 0F (Fahrenheit).
+    [Hướng dẫn: C/5 = (F-32)/9]-->
+    <label for="C">nhập độ C</label>
+    <input type="number" placeholder="Celsius" id="C">
+    <button onclick="chuyendoi()">Nhập</button>
+    <p id="result">Result :</p>
+    <script>
+        function chuyendoi(){
+            let c = parseInt(document.getElementById('C').value);
+            let F = (9*c / 5 ) + 32 ;
+            document.getElementById("result").innerHTML = "result :"+ F;
+        }
+    </script>
+
+</div>
+
+</body>
+</html>

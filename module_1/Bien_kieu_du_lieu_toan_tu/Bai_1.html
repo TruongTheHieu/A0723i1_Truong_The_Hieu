@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<div>
+<!--bài 1 : Viết chương trình nhập điểm của một sinh viên cho các môn:Vật lý, Hóa học, và Sinh học.
+ Sau đó hiển thị điểm trung bình và tổng của những điểm này.-->
+<label for="vatly">vật lý</label>
+<input type="number" placeholder="nhập điểm vật lý" id="vatly">
+<br/>
+<label for="hoahoc">Hóa học</label>
+<input type="number" placeholder="Nhập điểm Hóa học" id="hoahoc">
+<br/>
+<label for="sinhhoc">Sinh học</label>
+<input type="number" placeholder="nhập điểm sinh học" id="sinhhoc">
+<br/>
+<button onclick="diemTb();">Tính điểm Trung Bình</button>
+    <p id="result"></p>
+<script>
+function diemTb() {
+    let vatly;
+    vatly = parseInt(document.getElementById("vatly").value);
+    let hoahoc;
+    hoahoc = parseInt(document.getElementById("hoahoc").value);
+    let sinhhoc;
+    sinhhoc = parseInt(document.getElementById("sinhhoc").value);
+    let tb = ((vatly+hoahoc+sinhhoc)/3);
+    document.getElementById("result").innerHTML=('điểm vật lý là'+vatly +'<br/>'+'điểm hóa học là:'+hoahoc +'<br/>'+ 'điểm sinh học là:'+ sinhhoc +'<br/>'+
+        'điểm trung bình là :' + tb);
+
+}
+</script>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 3: Viết chương trình tính diện tích hình tròn-->
+<label for="bankinh"> bán kính hình tròn</label>
+<input type="number" placeholder="Nhập bán kính" id="bankinh">
+<button onclick="tinh()">tính S</button>
+<p id="result">result :</p>
+<script>
+    function tinh() {
+        let r = parseInt(document.getElementById('bankinh').value);
+        let S = r*r*3.14
+        document.getElementById("result").innerHTML = 'result :' + S
+    }
+
+</script>
+
+</body>
+</html>
