@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Kiểm tra số ngày trong tháng</h1>
+<input type="text" name id="Check" placeholder="Nhập số tháng">
+<button type="button" onclick="Check_date()">Check</button>
+<p id="Result"></p>
+<script>
+    function Check_date() {
+        let month = document.getElementById("Check").value;
+        switch (month) {
+            case "1" :
+            case "3" :
+            case "5":
+            case "7":
+            case "8":
+            case "10":
+            case "12": {
+                document.getElementById("Result").innerHTML = "<h4>Tháng :</h4>" + month + "<h4>có 31 ngày</h4>" + " <br><b>xem Lịch</b>" +
+                    "<img src='https://img.meta.com.vn/Data/image/2021/09/07/cac-thang-duong-lich-co-30-31-ngay-3.jpg'width='300' height='200'>";
+                break;
+            }
+            case "4":
+            case "6":
+            case "9":
+            case "11": {
+                document.getElementById("Result").innerHTML = "<h4>Tháng :</h4>" + month + "<h4>có 30 ngày</h4>" + " <br><b>xem Lịch</b>" +
+                    "<img src='https://img.meta.com.vn/Data/image/2021/09/07/cac-thang-duong-lich-co-30-31-ngay-3.jpg'width='300' height='200'>";
+                break;
+            }
+            case "2" : {
+                document.getElementById("Result").innerHTML = "<h4>Tháng bạn nhập có 29 ngày là tháng 2 năm nhuận</h4> <br> <h4>hoặc 28 ngày nếu tháng 2 đó năm không nhuận</h4>"
+                    + " <br><b>xem Lịch</b>" +
+                    "<img src='https://img.meta.com.vn/Data/image/2021/09/07/cac-thang-duong-lich-co-30-31-ngay-3.jpg'width='300' height='200'>";
+                break;
+
+            }
+            default: {
+                document.getElementById("Result").innerHTML = "làm theo hướng dẫn";
+            }
+
+
+        }
+
+    }
+</script>
+</body>
+</html>
