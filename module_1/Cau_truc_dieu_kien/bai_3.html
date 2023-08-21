@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0-->
+<input type="number" id="number" placeholder="nhập số cần kiểm tra">
+<button onclick="check()">kiểm tra</button>
+<span id="result"></span>
+<script>
+    function check(){
+    let NumBer = parseInt(document.getElementById('number').value);
+    if(NumBer > 0) {
+        document.getElementById('result').innerHTML = NumBer + "Lớn hơn 0";
+    }else {
+        document.getElementById('result').innerHTML = NumBer + " nhỏ hơn 0";
+    }
+    }
+</script>
+
+</body>
+</html>

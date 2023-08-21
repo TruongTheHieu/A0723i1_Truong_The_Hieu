@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ-->
+<label for="diemkiemtra">Nhập điểm kiểm tra</label>
+<input type="number" id="diemkiemtra"> <br> <br>
+<label for="diemgiuaky">Nhập điểm giữa kỳ</label>
+<input type="number" id="diemgiuaky"> <br>  <br>
+<label for="diemcuoiky">Nhập điểm cuối kỳ</label>
+<input type="number" id="diemcuoiky"> <br>
+<button onclick="check()">kiểm tra</button>
+<span id="result"></span>
+<script>
+    function check() {
+        let Diemkiemtra = parseInt(document.getElementById('diemkiemtra').value);
+        let Diemgiuaky = parseInt(document.getElementById('diemgiuaky').value);
+        let Diemcuoiky = parseInt(document.getElementById('diemcuoiky').value);
+        let Hocluc = ((Diemkiemtra + Diemgiuaky + Diemcuoiky) / 3);
+        if (Hocluc < 5) {
+            document.getElementById('result').innerHTML = "học lực yếu";
+        } else if (Hocluc <= 5) {
+            document.getElementById('result').innerHTML = "học lực trung bình";
+        } else if (Hocluc <= 7) {
+            document.getElementById('result').innerHTML = "học lực khá";
+        } else if (Hocluc <= 10) {
+            document.getElementById('result').innerHTML = "học lực giỏi";
+        }
+    }
+
+</script>
+</body>
+</html>
