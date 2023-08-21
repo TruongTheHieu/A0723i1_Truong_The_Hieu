@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính đơn giản</title>
+    <style>
+        td button {background-color:lightskyblue;}
+        tr {background-color:lightpink;}
+    </style>
+</head>
+<body>
+<table border="7">
+
+
+    <tr>
+        <th colspan="7">
+            <input id="window" width="100"/> </th>
+    </tr>
+    <tr>
+        <td><button type="button" value="1" onclick="inputValue('1')">1</button></td>
+        <td><button type="button" value="2" onclick="inputValue('2')">2</button></td>
+        <td><button type="button" value="3" onclick="inputValue('3')">3</button></td>
+        <td><button type="button" value="+" onclick="inputValue('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="4" onclick="inputValue('4')">4</button></td>
+        <td><button type="button" value="5" onclick="inputValue('5')">5</button></td>
+        <td><button type="button" value="6" onclick="inputValue('6')">6</button></td>
+        <td><button type="button" value="-" onclick="inputValue('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="7" onclick="inputValue('7')">7</button></td>
+        <td><button type="button" value="8" onclick="inputValue('8')">8</button></td>
+        <td><button type="button" value="9" onclick="inputValue('9')">9</button></td>
+        <td><button type="button" value="*" onclick="inputValue('*')">*</button></td>
+    </tr>
+    <tr>
+        <td><button id="reset" value="C" onclick="reset()">C</button></td>
+        <td><button type="button" value="0" onclick="inputValue('0')">0</button></td>
+        <td><button type="button" value="=" onclick="ketqua('=')">=</button></td>
+        <td><button type="button" value="/" onclick="inputValue('/')">/</button></td>
+    </tr>
+</table>
+</body>
+<script>
+    function inputValue(input) {
+        document.getElementById("window").value+=input;
+    }
+
+    function ketqua(){
+        let stringwindow = document.getElementById("window").value;
+        eval(stringwindow)
+        document.getElementById("window").value=eval(stringwindow);
+    }
+    function reset() {
+        document.getElementById("window").value="";
+    }
+
+</script>
+
+
+
+
+</html>
