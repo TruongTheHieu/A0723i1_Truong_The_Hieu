@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = new Array();
+    a = [-3, 4, 5, 6, 3, 14];
+    let siz = a.length;
+    document.write("mang ban dau:" + a + "<br>");
+    for (let i = 0; i < siz / 2; i++) {
+        temp = a[i]
+        a[i] = a[siz - i]
+        a[siz - i] = temp
+    }
+    document.write("mang sau dao: " + a)
+</script>
+
+</body>
+</html>

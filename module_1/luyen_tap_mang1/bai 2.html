@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = new Array(10);
+    let i;
+    for (let i = 0; i < arr.length ; i++) {
+        arr[i] = prompt("nhap phan tu arr [" + i +"] =");
+    }
+    let max = arr[0];
+    let index = 0 ;
+     for (i=0;i <arr.length; i++){
+         if (arr[i] > max){
+             max = arr[0];
+             index= i;
+         }
+     } document.write("mang arr" + arr+ "co phan tu lon nhat la:" + max + "tai vi tri index = " + index);
+</script>
+
+</body>
+</html>
