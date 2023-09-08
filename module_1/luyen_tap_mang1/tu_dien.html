@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let word = prompt('nhập từ ban cần tìm:');
+    let English = ['pen','pencil','eraser','pack','crayon'];
+    let tiengviet = ['bút mực','bút chì','cục tẩy','ba lô','bút màu'];
+    let check = true;
+
+    for (let i = 0; i <English.length ; i++) {
+        if (English[i] == word){
+            alert("từ tiếng việt là:" + tiengviet[i]);
+            break;
+        }else {
+            check = false;
+        }
+if (check == false){
+    alert("không tìm thấy từ thích hợp");
+}
+    }
+</script>
+
+</body>
+</html>

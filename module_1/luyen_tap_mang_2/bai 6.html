@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let a = ['a','b','-','c','-','d'];
+   let i = 0;
+   let arr = new Array();
+   for (let j = 0; j <a.length ; j++) {
+       if (a[i]!='-'){
+           arr[i] = a[j];
+           i++;
+       }else {
+           arr[i]='_';
+           i++
+       }
+
+   }
+   console.log ("mảng ban đầu:"+a);
+   console.log("mảng sau" + arr)
+
+
+</script>
+
+</body>
+</html>
