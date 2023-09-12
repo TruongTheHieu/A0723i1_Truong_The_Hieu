@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.-->
+<script>
+    let number1 = parseInt(prompt('nhập số 1'));
+    let number2 = parseInt(prompt('nhập số 2'));
+    let number3 = parseInt(prompt('nhập số 3'));
+
+    function Checknumber(n1,n2,n3) {
+        if (n1 > n2 && n3 ) {
+            alert("số lớn nhất là:" + n1);
+        }else if (n2 > n1 && n3){
+            alert('số lớn nhất là :'+ n2);
+        }else if(n3> n2 && n1) {
+            alert('số lớn nhất là :'+ n3);
+        }
+    } Checknumber(number1,number2,number3);
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

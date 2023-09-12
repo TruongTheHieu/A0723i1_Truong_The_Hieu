@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->
+<script>
+    let number = parseInt(prompt('Nhập số :'));
+    function residual(n) {
+        let giaithua = 1;
+        for (let i = 2; i <= n ; i++) {
+            giaithua *= i ;
+        }return giaithua;
+    }document.write("giải thừa của" + number + '='+ residual(number))
+</script>
+</body>
+</html>
