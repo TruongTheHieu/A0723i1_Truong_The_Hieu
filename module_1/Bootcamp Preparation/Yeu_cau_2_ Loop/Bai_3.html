@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 3: Vẽ tam giác cân rỗng có chiều cao h do người dùng nhập vào. Ví dụ: h = 5-->
+<!--             *-->
+<!--         *      *-->
+<!--      *            *-->
+<!--   *                 *-->
+<!--    * * * * * * * * *-->
+<script>
+    let h = +prompt('nhập chiều cao');
+    for (let i = 0; i < h; i++) {
+        for (let j = h; j >= i; j--) {
+            document.write('&nbsp');
+        }
+        for (let j = 1; j <= i * 2 + 1; j++) {
+            if (j === 1 || j === i * 2 + 1) {
+                document.write('*')
+            } else {
+                document.write('&nbsp');
+            }
+        }
+        document.write('<br>');
+
+    }
+    for (let i = 0; i < h + 3; i++) {
+        document.write('*');
+
+    }
+
+
+</script>
+</body>
+</html>
