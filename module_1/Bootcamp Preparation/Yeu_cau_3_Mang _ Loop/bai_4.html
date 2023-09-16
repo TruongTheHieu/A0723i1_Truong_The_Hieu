@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function goiMon() {
+        let ThuTu = [1, 2, 3, 4, 5, 6,];
+        let TenMon = ['cafe', 'camvat', 'nuocepcarot', 'nuocepcachua', 'nuocloc', 'nuocdua'];
+        let GiaTien = [20, 30, 25, 25, 5, 25];
+        let x = 0;
+        do {
+            let a = +prompt('nhập Thứ tự món :' +
+                '\n' + '1:cà phê' +
+                '\n' + '2:cam vắt' +
+                '\n' + '3:nước ép cà rốt' +
+                '\n' + '4:nước ép cà chua' +
+                '\n' + '5:nước lọc' +
+                '\n' + '6:nước dừa');
+            if (a > 6) {
+                break;
+            } else {
+                for (let i = 0; i < ThuTu.length; i++) {
+                    if (ThuTu[i] === a) {
+                        alert('bạn đã chọn' + TenMon[i] + 'có giá tiền là:' + GiaTien[i] + 'VNĐ');
+                        let b = prompt('mời bạn nhập số lượng');
+                        alert('số lượng ' + b + TenMon[i] + 'với số tiền là:' + + (GiaTien[i] * b) + 'VNĐ');
+                    }
+                }
+            }
+            x++;
+        } while (x !== 7);
+    }
+
+    goiMon()
+</script>
+
+
+</body>
+</html>
