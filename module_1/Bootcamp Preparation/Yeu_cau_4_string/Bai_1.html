@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<!-- Bài 1:Viết một hàm chuẩn hóa xâu ký tự: biển đổi xâu ký tự thành xâu sao cho trong xâu không có 2 dấu cách liền nhau
+và bắt đầu mỗi từ phải in hoa.
+Và một hàm tìm từ dài nhất trong 1 xâu ký tự. Hàm main sử dụng các hàm này để nhập xâu ký tự từ bàn phím,
+in ra xâu trước và sau khi chuẩn hóa, 1 từ dài nhất trong xâu đó.-->
+<!--<table>-->
+<!--    <caption>Thay thế chuỗi</caption>-->
+<!--    <tr>-->
+<!--        <td>chuỗi ban đầu</td>-->
+<!--        <td>-->
+<!--            <input id="chuoixau" type="text" size="50">-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>-->
+<!--            <button onclick="reverse()">Sửa</button>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+<script>
+    // function reverse() {
+    //     let str = document.getElementById('chuoixau').value;
+    //     let arr = str.toLowerCase().split('');
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i] === ' ' && arr[i - 1] === ' ') {
+    //             arr.splice(i, 1);
+    //             i--;
+    //         }
+    //         if (arr[i - 1] === ' ') {
+    //             arr[i] = arr[i].toUpperCase();
+    //         }
+    //         arr[0] = arr[0].toUpperCase();
+    //
+    //     }
+    //     document.write(arr.join(''));
+    // }
+    // const str1 = 'Cats are the best!';
+    //
+    // console.log(str1.endsWith('best!'));
+    // // Expected output: true
+    //
+    // console.log(str1.endsWith('best', 17));
+    // // Expected output: true
+    //
+    // const str2 = 'Is this a question?';
+    //
+    // console.log(str2.endsWith('question?'));
+
+    let h = +prompt('nhập chiều cao tam giác');
+    for (let i = 0; i <= h; i++) {
+        for (let j = h; j > i; j--) {
+            document.write('&nbsp&nbsp');
+        }
+        for (let j = 0; j < i * 2 + 1; j++) {
+            document.write('*');
+        }
+        document.write('<br>')
+    }
+
+</script>
+
+</body>
+</html>
