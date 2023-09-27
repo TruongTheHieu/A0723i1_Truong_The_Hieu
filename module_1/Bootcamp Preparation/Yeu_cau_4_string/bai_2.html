@@ -9,23 +9,43 @@
 <!--Ví dụ: s = "cabca", thì kết quả differentSymbolsNaive(s) = 3.-->
 <!--⇨	Có 3 ký tự khác nhau là a, b và c.-->
 <script>
+    // function countSymbols(str) {
+    //     let arr = [];
+    //     for (let i = 0; i < str.length; i++) {
+    //         arr[i] = str[i].toLowerCase();
+    //     }
+    //     arr.sort();
+    //     let count = 0;
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i] === arr[i + 1] ) {
+    //             continue;
+    //         } else {
+    //             count += 1;
+    //         }
+    //     } alert("Số ký tự khác nhau trong chuỗi: " + count);
+    // }
+    // let str = prompt("Nhập một chuỗi kí tự bất kỳ: ");
+    // countSymbols(str);
     function countSymbols(str) {
         let arr = [];
-        for (let i = 0; i < str.length; i++) {
+        let arr2= [];
+        for (let i = 0;i < str.length; i++){
             arr[i] = str[i].toLowerCase();
         }
         arr.sort();
-        let count = 0;
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] === arr[i + 1] ) {
+        let count = 0 ;
+        for (let i = 0; i < arr.length;i++){
+            if (arr[i] === arr[i + 1]){
+                arr[i].push(arr2);
                 continue;
-            } else {
-                count += 1;
+            } else  {
+                count+=1;
             }
-        } alert("Số ký tự khác nhau trong chuỗi: " + count);
-    }
-    let str = prompt("Nhập một chuỗi kí tự bất kỳ: ");
-    countSymbols(str);
+        }document.write("số ký tự khác nhau trong chuỗi" + count);
+        document.write("có" + count + "ký tự khác nhau là :" + arr2 );
+
+    }let str = prompt("nhập một chuỗi kí tự bất kỳ");
+    countSymbols(str)
 </script>
 
 
