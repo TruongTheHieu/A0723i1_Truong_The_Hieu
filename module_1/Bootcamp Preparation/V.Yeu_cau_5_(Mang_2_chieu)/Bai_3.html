@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 3: Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều-->
+<script>
+    let r = parseInt(prompt('nhập hàng'));
+    let c = parseInt(prompt('nhập cột'));
+    let arr = new Array();
+    for (let i = 0; i < r; i++) {
+        arr[i] = new Array();
+    }
+    for (let i = 0; i < r; i++) {
+        for (let j = 0; j < c; j++) {
+            arr[i][j] = parseInt(prompt("arr[" + i + "][" + j + "]= "));
+        }
+    }
+    for (let i = 0; i < r; i++) {
+        for (let j = 0; j < c; j++) {
+            console.log("a[" + i + "][" + j + "]= " + arr[i][j]);
+        }
+    }
+
+    function Max(arr, m, n) {
+        let max = arr[0][0];
+        for (let i = 0; i < m; i++) {
+            for (let j = 0; j < n; j++) {
+                if (max < arr[i][j]) {
+                    max = arr[i][j];
+                }
+            }
+
+        }
+        return max;
+
+    }
+
+    function Min(arr, m, n) {
+        let min = arr[0][0];
+        for (let i = 0; i < m; i++) {
+            for (let j = 0; j < n; j++) {
+                if (min > arr[i][j]) {
+                    min = arr[i][j];
+                }
+            }
+        }
+        return min;
+    }
+
+    console.log("gia tri lon nNHAT LA: " + Max(arr, r, c));
+    console.log('gia tri nho nhat la :' + Min(arr, r, c));
+</script>
+</body>
+</html>
